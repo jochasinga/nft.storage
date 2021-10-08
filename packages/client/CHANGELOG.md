@@ -1,5 +1,12 @@
 # Changelog
 
+### [3.3.1](https://www.github.com/ipfs-shipyard/nft.storage/compare/nft.storage-v3.3.0...nft.storage-v3.3.1) (2021-10-08)
+
+
+### Changes
+
+* update example dependencies ([f1ca9db](https://www.github.com/ipfs-shipyard/nft.storage/commit/f1ca9dbed41cad4a21b1f27f78abf84307194840))
+
 ## [3.3.0](https://www.github.com/ipfs-shipyard/nft.storage/compare/nft.storage-v3.2.2...nft.storage-v3.3.0) (2021-09-29)
 
 
