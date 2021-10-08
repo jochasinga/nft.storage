@@ -1,5 +1,26 @@
 # Changelog
 
+## [2.2.0](https://www.github.com/ipfs-shipyard/nft.storage/compare/cron-v2.1.0...cron-v2.2.0) (2021-10-08)
+
+
+### Features
+
+* cron v1 ([#496](https://www.github.com/ipfs-shipyard/nft.storage/issues/496)) ([fa850a5](https://www.github.com/ipfs-shipyard/nft.storage/commit/fa850a5344f23cf8f520c85e982345b59f26f6b9))
+
+
+### Bug Fixes
+
+* conversion to PSA status ([be7e005](https://www.github.com/ipfs-shipyard/nft.storage/commit/be7e005895434ee12848cb0cb03f494fcaaa2d69))
+* increase pinata rate limit ([cf53a4f](https://www.github.com/ipfs-shipyard/nft.storage/commit/cf53a4f2955b872b16d2c7462c6db6d58d7cc25c))
+* niftysave pin job failures by adopting request timeouts ([#267](https://www.github.com/ipfs-shipyard/nft.storage/issues/267)) ([0bac638](https://www.github.com/ipfs-shipyard/nft.storage/commit/0bac6385ef0417a7a3453172bf3a3ed9e664f9e6))
+* pinata cron ([aec6f83](https://www.github.com/ipfs-shipyard/nft.storage/commit/aec6f83542dae0812cec8c0c5d55706bfa5bb155))
+* set stream-channels=false for cluster add ([#304](https://www.github.com/ipfs-shipyard/nft.storage/issues/304)) ([f1121d0](https://www.github.com/ipfs-shipyard/nft.storage/commit/f1121d0e75b1750e6d1a5a851d5eeed8f04cb64b))
+
+
+### Changes
+
+* missed one ([df92e6e](https://www.github.com/ipfs-shipyard/nft.storage/commit/df92e6e673bb73a0cd8cbc25a6f9738d718ad474))
+
 ## [2.1.0](https://www.github.com/ipfs-shipyard/nft.storage/compare/cron-v2.0.0...cron-v2.1.0) (2021-07-13)
 
 
