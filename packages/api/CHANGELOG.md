@@ -1,5 +1,90 @@
 # Changelog
 
+## [4.0.0](https://github.com/jochasinga/nft.storage/compare/api-v3.0.0...api-v4.0.0) (2022-06-29)
+
+
+### ⚠ BREAKING CHANGES
+
+* uploaded files are no longer instantly available via gateways or on the DHT. They may take a few seconds to become indexed by Elastic IPFS.
+
+### Features
+
+* add cargo metric statements and dummy data inserts for testing … ([#1835](https://github.com/jochasinga/nft.storage/issues/1835)) ([72480d6](https://github.com/jochasinga/nft.storage/commit/72480d6a9719308bf4a8a81c34764a51f5f58cfa))
+* add copy_upload_history db function to migrate user data ([#1964](https://github.com/jochasinga/nft.storage/issues/1964)) ([7edca7b](https://github.com/jochasinga/nft.storage/commit/7edca7bd91fcb6f39d3008b07a9fc27824f721cd))
+* add cors handler to stats route, trying to resolve cors issue ([#1599](https://github.com/jochasinga/nft.storage/issues/1599)) ([f69f570](https://github.com/jochasinga/nft.storage/commit/f69f570cf65e2847ac3016a58f85bd1f138f5c3a))
+* add HasSuperHotAccess user tag ([#1838](https://github.com/jochasinga/nft.storage/issues/1838)) ([019a505](https://github.com/jochasinga/nft.storage/commit/019a505e8f4bb93a24b8c480646779f5e4b66326))
+* add permissions endpoint ([#1753](https://github.com/jochasinga/nft.storage/issues/1753)) ([2f5b6fb](https://github.com/jochasinga/nft.storage/commit/2f5b6fb2660231e4591f37e29389c41ac7045605))
+* add stats routes ([#1400](https://github.com/jochasinga/nft.storage/issues/1400)) ([96acd59](https://github.com/jochasinga/nft.storage/commit/96acd592b8e0cc36f2adaf542ef4921cfa8bea22))
+* add super hot access tag to user tags endpoint ([#1871](https://github.com/jochasinga/nft.storage/issues/1871)) ([04a17aa](https://github.com/jochasinga/nft.storage/commit/04a17aac0f3f7a041324bb4bd65d4ec13b49f3f9))
+* add support for user requests ([#1959](https://github.com/jochasinga/nft.storage/issues/1959)) ([485a304](https://github.com/jochasinga/nft.storage/commit/485a304748f1319eb72d678b65227ec054767d64))
+* Adding admin ability to search by github_id ([#1960](https://github.com/jochasinga/nft.storage/issues/1960)) ([65b551c](https://github.com/jochasinga/nft.storage/commit/65b551c791ea8dc27c4c6e3e8a56188a4b391e54))
+* Adding HasDeleteRestriction user_tag ([#1952](https://github.com/jochasinga/nft.storage/issues/1952)) ([1d895e0](https://github.com/jochasinga/nft.storage/commit/1d895e0efc0f81dcdf91ca49f6a77c2c1369916f))
+* api ipfs path ([#1064](https://github.com/jochasinga/nft.storage/issues/1064)) ([3b46940](https://github.com/jochasinga/nft.storage/commit/3b46940f9ee57c05f166aeb26f7024e6e6ce1f09))
+* api support for ipfs-cluster@1.0 ([#1789](https://github.com/jochasinga/nft.storage/issues/1789)) ([a9d6f84](https://github.com/jochasinga/nft.storage/commit/a9d6f84e6ec0a099d789601a642c22b6513911c3))
+* **api:** schema updates for admin site. ([#1203](https://github.com/jochasinga/nft.storage/issues/1203)) ([bca153e](https://github.com/jochasinga/nft.storage/commit/bca153e6074c39b94a10aa350fd5c9fe8e283311))
+* cargo schema migration ([#1856](https://github.com/jochasinga/nft.storage/issues/1856)) ([fe2ce9c](https://github.com/jochasinga/nft.storage/commit/fe2ce9c3b084687104ce51d1cd972b0b957c9cea))
+* content_cid not id is used from nft data upload not uploads ([#1755](https://github.com/jochasinga/nft.storage/issues/1755)) ([21e8eb0](https://github.com/jochasinga/nft.storage/commit/21e8eb08962a36aa449d9d65e37631cfedcc672b))
+* create starter kit and ucan example ([#1593](https://github.com/jochasinga/nft.storage/issues/1593)) ([0408aa1](https://github.com/jochasinga/nft.storage/commit/0408aa12e0a5d6dcacbd257d9190be441cef4552))
+* db optimizations, backups optimizations ([#1664](https://github.com/jochasinga/nft.storage/issues/1664)) ([ef0cf02](https://github.com/jochasinga/nft.storage/commit/ef0cf02237aeacda178541f47863f8eee53bff76))
+* DB schema and API for user_tag_proposal. ([#1410](https://github.com/jochasinga/nft.storage/issues/1410)) ([#1402](https://github.com/jochasinga/nft.storage/issues/1402)) ([0fa240d](https://github.com/jochasinga/nft.storage/commit/0fa240d5612c130ad60b24bb2953853eb80101a2))
+* labeling uploads on files ([#1694](https://github.com/jochasinga/nft.storage/issues/1694)) ([70d81ac](https://github.com/jochasinga/nft.storage/commit/70d81acff0cba3e4bb06b5491c7c60fb97d05b65))
+* optimize metrics query ([#1906](https://github.com/jochasinga/nft.storage/issues/1906)) ([dd8d3bd](https://github.com/jochasinga/nft.storage/commit/dd8d3bdcf9e373efe2b26c67c68ad47a96fe7ecb))
+* refactor pinning authorization logic to use user_tag table ([#1389](https://github.com/jochasinga/nft.storage/issues/1389)) ([b5e99ec](https://github.com/jochasinga/nft.storage/commit/b5e99ec2a08d93e844c9271ee103bb98cccf7b28)), closes [#1381](https://github.com/jochasinga/nft.storage/issues/1381)
+* return unique error message when using a blocked key ([#1898](https://github.com/jochasinga/nft.storage/issues/1898)) ([6fcd389](https://github.com/jochasinga/nft.storage/commit/6fcd38923506965012505473b57afde2ce22973e))
+* s3 backups ([#899](https://github.com/jochasinga/nft.storage/issues/899)) ([60f17c0](https://github.com/jochasinga/nft.storage/commit/60f17c00e21f42e0aae20153ddfdbdeb27f95f4b))
+* switch to Elastic IPFS ([#2026](https://github.com/jochasinga/nft.storage/issues/2026)) ([b51fa4e](https://github.com/jochasinga/nft.storage/commit/b51fa4e7424d1bfe54a61022880ff1be7beef92c))
+* track content bytes total metric ([#1199](https://github.com/jochasinga/nft.storage/issues/1199)) ([695e4a5](https://github.com/jochasinga/nft.storage/commit/695e4a5d7bbefc125291cfd001a743683efb6808))
+* ucan support ([#1555](https://github.com/jochasinga/nft.storage/issues/1555)) ([b0388da](https://github.com/jochasinga/nft.storage/commit/b0388da852f5843b75d1a170949eb2bea791296e))
+
+
+### Bug Fixes
+
+* [#1666](https://github.com/jochasinga/nft.storage/issues/1666): admin_search should return users without tokens ([#1668](https://github.com/jochasinga/nft.storage/issues/1668)) ([13363e7](https://github.com/jochasinga/nft.storage/commit/13363e715558a15ff9faa96982f176693e55447c))
+* add durable object types ([#1212](https://github.com/jochasinga/nft.storage/issues/1212)) ([ffc9934](https://github.com/jochasinga/nft.storage/commit/ffc9934037795e2e16c816139d336c2bbb83b3c1))
+* Adding additional message details to account is blocked error ([#1898](https://github.com/jochasinga/nft.storage/issues/1898)) ([#1922](https://github.com/jochasinga/nft.storage/issues/1922)) ([48597c2](https://github.com/jochasinga/nft.storage/commit/48597c20f7b6a1bcf5f43f871a3a04db6cac9aea))
+* Adding user_tag_proposal schema to reset.sql for local dev ([#1977](https://github.com/jochasinga/nft.storage/issues/1977)) ([6be18ff](https://github.com/jochasinga/nft.storage/commit/6be18ff4a42d924fb68d78d12ddbf8d42e722764))
+* api add to cluster always with local false ([#1806](https://github.com/jochasinga/nft.storage/issues/1806)) ([1dd8d81](https://github.com/jochasinga/nft.storage/commit/1dd8d81b15acf5525d898a2fcce71e4defa28cc9))
+* api assert dep ([#1499](https://github.com/jochasinga/nft.storage/issues/1499)) ([8dd67ea](https://github.com/jochasinga/nft.storage/commit/8dd67ea512bc1ab77b4ab7499cc9f410ee2d957a))
+* **api:** remove release workflow ([db7609b](https://github.com/jochasinga/nft.storage/commit/db7609bc014b10a3a3a42150a614e753e72c504b))
+* augment car start to inspect car and check if complete ([#1330](https://github.com/jochasinga/nft.storage/issues/1330)) ([d591223](https://github.com/jochasinga/nft.storage/commit/d591223b0ee528360037ed8860cf3a2c8b79324a))
+* bump MAX_BLOCK_SIZE to 2MiB limit imposed by bitswap ([#1863](https://github.com/jochasinga/nft.storage/issues/1863)) ([d96ca30](https://github.com/jochasinga/nft.storage/commit/d96ca304421f8ae7789dd2ee3e73c2f45c7dc20c))
+* catch more errors ([#1095](https://github.com/jochasinga/nft.storage/issues/1095)) ([2943beb](https://github.com/jochasinga/nft.storage/commit/2943beb29d011c6d3c5e046107ab14690cb274d1))
+* config loading required vars ([#1955](https://github.com/jochasinga/nft.storage/issues/1955)) ([ad5773c](https://github.com/jochasinga/nft.storage/commit/ad5773c55fb67b56af2f5a43fec08182f85d1510))
+* dag structure check ([#2036](https://github.com/jochasinga/nft.storage/issues/2036)) ([8ec6ecf](https://github.com/jochasinga/nft.storage/commit/8ec6ecf7d1ec94ebfb354de932872e8f6816b2da))
+* database credentials for startup ([#1462](https://github.com/jochasinga/nft.storage/issues/1462)) ([e0512e4](https://github.com/jochasinga/nft.storage/commit/e0512e4851e130c77e07d3e81238e7a1369b9bbe))
+* default PSA pin status filter ([#1936](https://github.com/jochasinga/nft.storage/issues/1936)) ([235a308](https://github.com/jochasinga/nft.storage/commit/235a30820906d6c66bcac1a1a6d9e220932d5145))
+* gateway ipfs path in gateway worker ([#1347](https://github.com/jochasinga/nft.storage/issues/1347)) ([8cf367c](https://github.com/jochasinga/nft.storage/commit/8cf367c885a73f74abe284018556b345738067dc))
+* infra package grants for stats metrics ([#1578](https://github.com/jochasinga/nft.storage/issues/1578)) ([f06883e](https://github.com/jochasinga/nft.storage/commit/f06883e4b896a81f71e31404f4595e763e0d4f3f))
+* invalid multipart data error ([#1901](https://github.com/jochasinga/nft.storage/issues/1901)) ([536769c](https://github.com/jochasinga/nft.storage/commit/536769cab3f01d7c0ad04fe91e66a78f8105b171))
+* lift pg statement_timeout ([#1773](https://github.com/jochasinga/nft.storage/issues/1773)) ([f7dff1d](https://github.com/jochasinga/nft.storage/commit/f7dff1d6dc985cdaab98ae84ed51b24c5f2aacfe))
+* metrics cron permissions and increase timeout ([#1574](https://github.com/jochasinga/nft.storage/issues/1574)) ([ca4411a](https://github.com/jochasinga/nft.storage/commit/ca4411a0bc3283d97fcb7069780b41bd9fee30bb))
+* pin by source CID ([#1634](https://github.com/jochasinga/nft.storage/issues/1634)) ([4ab48ce](https://github.com/jochasinga/nft.storage/commit/4ab48ce19657f5f6a03ea2fe0a98d2d10f0e5509))
+* pin composite index not for pinned only status ([#1117](https://github.com/jochasinga/nft.storage/issues/1117)) ([0bc1c22](https://github.com/jochasinga/nft.storage/commit/0bc1c22647d5370449e0ec21db63ded9efe32053))
+* pin magic admin ([#1841](https://github.com/jochasinga/nft.storage/issues/1841)) ([1bec0b0](https://github.com/jochasinga/nft.storage/commit/1bec0b03dcf13f700ceeaf2a0e3cce8f291f0072))
+* pinning api list only returns pin requests ([#1267](https://github.com/jochasinga/nft.storage/issues/1267)) ([5246958](https://github.com/jochasinga/nft.storage/commit/52469589922ec0e8d66c505d799d6e42a3e4f0f7))
+* preserve all backup_urls for chunked uploads ([#1940](https://github.com/jochasinga/nft.storage/issues/1940)) ([9084d87](https://github.com/jochasinga/nft.storage/commit/9084d87d51c89ade8c991dcba1f983645bda39c0))
+* psa list empty ([#1432](https://github.com/jochasinga/nft.storage/issues/1432)) ([df96ce0](https://github.com/jochasinga/nft.storage/commit/df96ce0280affdaaa098d7c1ea85e438afd6de9e))
+* Refactor pinning authorization logic to use user_tag table ([#1654](https://github.com/jochasinga/nft.storage/issues/1654)) ([043049e](https://github.com/jochasinga/nft.storage/commit/043049e22c53ca1143b01e87e563cc488f0e2845))
+* remove cluster API URL from /version endpoint ([#1843](https://github.com/jochasinga/nft.storage/issues/1843)) ([cece7ce](https://github.com/jochasinga/nft.storage/commit/cece7ce7773b9c37a18d8c0f33b0ec307474e294))
+* remove only in tests and ucan feedback ([#1613](https://github.com/jochasinga/nft.storage/issues/1613)) ([fb93a2a](https://github.com/jochasinga/nft.storage/commit/fb93a2aeb433d1f6d57cf7cd6da2eca4f8cb1d24))
+* remove rp config ([9f3c859](https://github.com/jochasinga/nft.storage/commit/9f3c85954a73119f11a888708c09a3beff17d44f))
+* send checksum on s3 upload ([#1926](https://github.com/jochasinga/nft.storage/issues/1926)) ([3738f77](https://github.com/jochasinga/nft.storage/commit/3738f77fcb629c49fc11daac8e55a5a0500d4769))
+* single() on multiple rows ([#1861](https://github.com/jochasinga/nft.storage/issues/1861)) ([459c4c1](https://github.com/jochasinga/nft.storage/commit/459c4c1c7df47a9e9a181cda3acefaa826a44ae3))
+* switch to cluster local add ([#2012](https://github.com/jochasinga/nft.storage/issues/2012)) ([635314f](https://github.com/jochasinga/nft.storage/commit/635314f1ad822db562f6fbea25b007f14d0e6f94))
+* test the ci release ([2908d04](https://github.com/jochasinga/nft.storage/commit/2908d04e18c23a7c0c912433fc3445a26e0e6df4))
+* testing release ([bd61204](https://github.com/jochasinga/nft.storage/commit/bd612042a54109ed11c94078391dd7ed677d611c))
+* testing release api scope ([451e9ba](https://github.com/jochasinga/nft.storage/commit/451e9ba052416ab4d90248e9333ba8f167cea8fe))
+* update db-types and add documentation ([#1619](https://github.com/jochasinga/nft.storage/issues/1619)) ([a3b28e2](https://github.com/jochasinga/nft.storage/commit/a3b28e2df4d09fd914a58e14fe362f4ec991279a))
+* update ipfs car and client ([#1373](https://github.com/jochasinga/nft.storage/issues/1373)) ([2b61549](https://github.com/jochasinga/nft.storage/commit/2b61549f4f31684a6afca28c9f7ed39dc076ada2))
+* upgrade wrangler ([#1972](https://github.com/jochasinga/nft.storage/issues/1972)) ([7088712](https://github.com/jochasinga/nft.storage/commit/70887129ccba3af8c11c7103cd15b209929122ba))
+* verify CIDs match data in CAR uploads ([#1866](https://github.com/jochasinga/nft.storage/issues/1866)) ([5012b4a](https://github.com/jochasinga/nft.storage/commit/5012b4a29e06cef4c0124bb87a880aac0d5bbf26))
+
+
+### Performance Improvements
+
+* add indexes for pins and metrics cron improvements ([#1113](https://github.com/jochasinga/nft.storage/issues/1113)) ([9b29f57](https://github.com/jochasinga/nft.storage/commit/9b29f57dc5b501e442c27c9cdb375f150191e708))
+* metrics max concurrent queries and adds inserted at index to upload ([#1576](https://github.com/jochasinga/nft.storage/issues/1576)) ([4645d15](https://github.com/jochasinga/nft.storage/commit/4645d1594ec93eefee2d2d8f783b6ff5be5cfd8e))
+
 ## [3.0.0](https://github.com/nftstorage/nft.storage/compare/api-v2.28.1...api-v3.0.0) (2022-06-28)
 
 
