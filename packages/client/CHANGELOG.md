@@ -1,5 +1,33 @@
 # Changelog
 
+## [6.5.0](https://github.com/jochasinga/nft.storage/compare/nft.storage-v6.4.0...nft.storage-v6.5.0) (2022-07-02)
+
+
+### Features
+
+* abortable requests ([#2027](https://github.com/jochasinga/nft.storage/issues/2027)) ([44e6a06](https://github.com/jochasinga/nft.storage/commit/44e6a0649be7719570c2bdbc3634853395d9376e))
+* add rate limiter ([#1647](https://github.com/jochasinga/nft.storage/issues/1647)) ([7726c64](https://github.com/jochasinga/nft.storage/commit/7726c646b84624ede58dd8cac7913fc8d4431f16))
+* add stats page ([#1376](https://github.com/jochasinga/nft.storage/issues/1376)) ([db62471](https://github.com/jochasinga/nft.storage/commit/db624711f10b672a3422e149092f4df0a5495d91))
+* New docs internal integration ([#1044](https://github.com/jochasinga/nft.storage/issues/1044)) ([2d8c67a](https://github.com/jochasinga/nft.storage/commit/2d8c67a8fe99c112001867d2cac6b14ca9f02e89))
+* storeDirectory accepts files as AsyncIterable<File> ([#1920](https://github.com/jochasinga/nft.storage/issues/1920)) ([27394f6](https://github.com/jochasinga/nft.storage/commit/27394f6435ebfbead8cad609b2e92be4b69b4661))
+* storeDirectory accepts iter of file objects ([#1924](https://github.com/jochasinga/nft.storage/issues/1924)) ([377b045](https://github.com/jochasinga/nft.storage/commit/377b045995460ac24faac0b5b21eff7e213a6274))
+
+
+### Bug Fixes
+
+* add pre-bundled esm build to package exports ([#1234](https://github.com/jochasinga/nft.storage/issues/1234)) ([05c5b96](https://github.com/jochasinga/nft.storage/commit/05c5b96eac977a4d078ae0164f01cb9376dd899c))
+* client close blockstore on store directory and store blob ([#1198](https://github.com/jochasinga/nft.storage/issues/1198)) ([50210f0](https://github.com/jochasinga/nft.storage/commit/50210f03c4032a96e0b95df0f5189711c97ac5ca))
+* **client:** test new release ci ([f26c739](https://github.com/jochasinga/nft.storage/commit/f26c739c39104904152010b8aad5da4914e361c9))
+* create stream when needed ([#1693](https://github.com/jochasinga/nft.storage/issues/1693)) ([6dd3368](https://github.com/jochasinga/nft.storage/commit/6dd33685e236f7dbd1343c338d6e29ba6efd9d4e))
+* file import in some ts configurations ([#1915](https://github.com/jochasinga/nft.storage/issues/1915)) ([878a113](https://github.com/jochasinga/nft.storage/commit/878a113403d2be1331bda8077407ba5edaca16ba))
+* gateway url in client ([#1425](https://github.com/jochasinga/nft.storage/issues/1425)) ([785a1db](https://github.com/jochasinga/nft.storage/commit/785a1db360dfc7947b4e3e1289fb9de3b2ac3c58))
+* link to main branch from generated client docs ([#1430](https://github.com/jochasinga/nft.storage/issues/1430)) ([b0a1f8e](https://github.com/jochasinga/nft.storage/commit/b0a1f8e8f0a9f551e933dee1dc3c67a61aa8444a))
+* link to NFTStorage constructor in API reference docs ([#2005](https://github.com/jochasinga/nft.storage/issues/2005)) ([4eddd01](https://github.com/jochasinga/nft.storage/commit/4eddd01a78e4948d4b1e39ba88f4dee05140f512))
+* rate limit error message ([#1154](https://github.com/jochasinga/nft.storage/issues/1154)) ([f449126](https://github.com/jochasinga/nft.storage/commit/f4491267b4f596a4871a52f9582d063dd4dc4ec7))
+* typos in JS client lib docs ([#1298](https://github.com/jochasinga/nft.storage/issues/1298)) ([5f9568c](https://github.com/jochasinga/nft.storage/commit/5f9568c7164138ba737662721bb4bd9abbfa06ec))
+* update ipfs car and client ([#1373](https://github.com/jochasinga/nft.storage/issues/1373)) ([2b61549](https://github.com/jochasinga/nft.storage/commit/2b61549f4f31684a6afca28c9f7ed39dc076ada2))
+* **website:** remove type ([94fe5e5](https://github.com/jochasinga/nft.storage/commit/94fe5e50fc581d4ac9062630258934458cb91728))
+
 ## [6.4.0](https://github.com/nftstorage/nft.storage/compare/nft.storage-v6.3.0...nft.storage-v6.4.0) (2022-06-28)
 
 
